@@ -7,8 +7,10 @@
 # }
 
 def select_winner(passengers)
+  winner = ""
   passengers.each do |suite, passenger|
     if suite == "Suite A" && passenger.index('A') == 0
-      return passenger
-  end
+      winner = passenger
+    end
+  winner
 end
