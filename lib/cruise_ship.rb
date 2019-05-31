@@ -9,7 +9,7 @@
 def select_winner(passengers)
   winner = ""
   passengers.each do |suite, passenger|
-    if suite == "Suite A" && passenger.index('A') == 0
+    if suite == :suite_a && passenger.index('A') == 0
       winner = passenger
     end
   end
