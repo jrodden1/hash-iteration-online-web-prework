@@ -11,7 +11,6 @@ def select_winner(passengers)
   passengers.each do |suite, passenger|
     if suite == "Suite A" && passenger.index('A') == 0
       winner = passenger
-      break
     end
   end
   winner
